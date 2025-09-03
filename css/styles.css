@@ -1,0 +1,64 @@
+/* .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px 20px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 8px -9px rgba(0s, 0, 0, 0.75);
+    height: 60px;
+    
+} */
+
+
+.nav-item .nav-link {
+color: #18A0FB;
+align-items: center;
+
+}
+
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+.cards {
+    display: flex;
+    
+}
+.card {
+    flex: 1;
+    /* margin-right: 70px; */
+    margin: 0 20px;
+}
+.fa {
+    margin-top: 90px;
+}
+.ia {
+    
+    margin-top: 90px;
+}
+.bottomCardsleft{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color:black;
+    text-align: right;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    height: 164px;
+}
+.footer-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px 0;
+}
