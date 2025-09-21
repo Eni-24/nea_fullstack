@@ -6,8 +6,8 @@ include('./includes/header.php');
       <form action="process.php" method="POST" enctype="multipart/form-data" 
       style="max-width: 700px;">
         <div class="form-field mb-4">
-          <label id="image" for="">Upload Image</label>
-          <input type="file" name="Image" class="form-control"/>
+          <label id="image" for="image">Upload Image</label>
+          <input type="file" name="image" class="form-control"/>
         </div>
         <div class="form-field mb-4">
           <input type="text" name="title" class="form-control" placeholder="enter title"/>

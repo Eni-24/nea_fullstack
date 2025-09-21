@@ -25,6 +25,28 @@ align-items: center;
     height: 40px;
     width: 40px;
 }
+
+.search-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.search-box input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  padding: 0.5rem 1rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .cards {
     display: flex;
     
@@ -62,3 +84,17 @@ footer{
     align-items: center;
     padding-top: 10px 0;
 }
+
+
+.section-header{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
