@@ -55,6 +55,9 @@ align-items: center;
     flex: 1;
     /* margin-right: 70px; */
     margin: 0 20px;
+ 
+     
+
 }
 .fa {
     margin-top: 90px;
@@ -93,12 +96,17 @@ footer{
 .post{
     color: black;
     text-decoration: none;
-    
+
+}
+.fa{
+    margin-left: 20px;
 }
 
 
-
-
+.posts{
+    color: black;
+    text-decoration: none;
+}   
 
 
 

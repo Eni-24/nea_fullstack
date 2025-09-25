@@ -5,7 +5,7 @@ include('includes/navbar.php');
 <h1 class="ia">Interactive Articles</h1>
 <div class="cards">
   <div class="card" style="width: 5rem;">
-    <img src="./images/1.jpg" class="card-img-top" alt="...">
+    <img src="./images/int1.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Self-Assessment quiz</h5>
       <p class="card-text">Fostering a sense of well-being and resilience.It's about helping children learn to recognise and express ther emotion in a healthy way.</p>
@@ -14,7 +14,7 @@ include('includes/navbar.php');
   </div>
   <div class="bottomCardsleft">
     <div class="card" style="width: 18rem; margin-bottom: 15px;">
-      <img src="./images/1.jpg" class="card-img-top" alt="...">
+      <img src="./images/int2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Learning challenges quiz</h5>
         <p class="card-text">How the brain receives , organises and responds to sensory information from the body and environment </p>
@@ -23,7 +23,7 @@ include('includes/navbar.php');
     </div>
 
     <div class="card" style="width: 18rem;">
-      <img src="./images/1.jpg" class="card-img-top" alt="...">
+      <img src="./images/int3.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Learning challenges quiz</h5>
         <p class="card-text">How the brain receives , organises and responds to sensory information from the body and environment </p>
@@ -33,15 +33,6 @@ include('includes/navbar.php');
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
 <?php
 include('includes/footer.php');
 ?>

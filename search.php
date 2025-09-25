@@ -38,7 +38,7 @@ include('includes/navbar.php');
       <?php
           }
         } else {
-          echo <p> No results found for '<strong>$search</strong>'.</p> ;
+          echo "<p>No results found for '<strong>$search</strong>'.</p>" ;
         }
       } else {
         echo "<p>Please enter a search term.</p>";

@@ -28,10 +28,7 @@
         $title = mysqli_real_escape_string($connection, $_POST['title']);
         $summary = mysqli_real_escape_string($connection, $_POST['summary']);
         $content = mysqli_real_escape_string($connection, $_POST['content']);
-
-
-    
-        # handling image upload 
+          # handling image upload 
         $image = $_FILES['image']['name'];
 
     if (!empty($image)) {
