@@ -107,6 +107,58 @@ footer{
     color: black;
     text-decoration: none;
 }   
+.app{
+    color: black;
+}
 
+.singlePostImage{
+    
+    height: 1000px;   
+    /* display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; */
+}
 
+.blog-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
+.blog-container img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.contents{
+    display: flex;
+    width: min-content;
+}
+.contentsImg {
+  width: 33%;
+  height: 166px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.morePostcontents p {
+    color: red;
+}
+
+.register, .login {
+  text-align: center;
+  color: green;
+  margin-top: -50px;
+  font-size: 2rem;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}

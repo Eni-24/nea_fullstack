@@ -1,4 +1,3 @@
-
 <footer class="footer-contents">
   <span>
  © Sept 2024 Learning Matters!!!

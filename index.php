@@ -12,7 +12,7 @@
   ?>
   <div class="card" style="width:15rem;">
     <a class="posts"href="view.php?id=<?php echo $data['id']; ?>">
-      <img width="685px" height="457px" src="/admin/uploads/<?php echo $data['image']?>" class="card-img-top" alt="...">
+      <img width="20px" height="500px" src="/admin/uploads/<?php echo $data['image']?>" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title"><?php echo $data['title']?></h5>
         <p class="card-text"><?php echo $data['summary']?></p>

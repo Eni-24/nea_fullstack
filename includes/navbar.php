@@ -16,6 +16,12 @@
         <li class="nav-item">
           <a class="nav-link" href="/feedback.php">Feedback System</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register.php">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login.php">Login</a>
+        </li>
       </ul>
       <div class="search-box">
         <form action="search.php" method="POST">
