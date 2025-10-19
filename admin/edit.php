@@ -3,7 +3,7 @@ include("./includes/header.php");
 include("../includes/db.php");
 
 if (isset($_GET['id'])) {
-    $id = intval($_GET['id']); 
+    $id = intval($_GET['id']); // prevent SQL injection
     $sql = "SELECT * FROM posts WHERE id = $id";
     $result = mysqli_query($connection, $sql);
 

@@ -1,35 +1,29 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/"><img class="logo" src="./images/logo1.png" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-      
-        <li class="nav-item">
-          <a class="nav-link" href="/interactive.php">Interactive Models</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/feedback.php">Feedback System</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/login.php">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/register.php">Register</a>
-        </li>
-      </ul>
+<header>
+      <a href="/"><img src="./images/logo.png" alt="logo" class="logo"></a>
+      <?php session_start(); ?>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/interactive.php">Interactive Features</a></li>
+          <li><a href="/feedback.php">Feedback</a></li>
+
+          <?php if (isset($_SESSION['user_id'])) { ?>
+          <li><a href="logout.php">Logout (<?php echo $_SESSION['username']; ?>)</a></li>
+          <?php } else { ?>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php">Register</a></li>
+          <?php } ?>
+
+
+          <!-- <li><a href="/register.php">Register</a></li>
+          <li><a href="/login.php">Login</a></li> -->
+        </ul>
+      </nav>
       <div class="search-box">
         <form action="search.php" method="POST">
-          <input name="search" type="text" placeholder="Search..." />
+          <input type="text" name="search" placeholder="Search...">
           <button type="submit" name="submit">Search</button>
         </form>
-      </div>
         
-    </div>
-  </div>
-</nav>
+      </div>
+    </header>

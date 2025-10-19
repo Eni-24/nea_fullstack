@@ -1,29 +1,49 @@
-/* .navbar {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 30px 20px;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    width: 100%;
-    box-shadow: 0px 5px 8px -9px rgba(0s, 0, 0, 0.75);
-    height: 60px;
-    
-} */
-
-
-.nav-item .nav-link {
-color: #18A0FB;
-align-items: center;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  /* padding: 0 1rem; */
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
 
 .logo {
-    height: 40px;
-    width: 40px;
+  width: 70px;
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
 }
 
 .search-box {
@@ -47,81 +67,276 @@ align-items: center;
   cursor: pointer;
 }
 
-.cards {
-    display: flex;
-    
+main {
+  margin: 2rem 0;
 }
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+
+.section-header a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
 .card {
-    flex: 1;
-    /* margin-right: 70px; */
-    margin: 0 20px;
- 
-     
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
 
+.card:hover {
+  transform: translateY(-5px);
 }
-.fa {
-    margin-top: 90px;
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
-.ia {
-    
-    margin-top: 90px;
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
 }
-.bottomCardsleft{
-    display: flex;
-    flex-direction: column;
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
 }
-footer{
-    background-color:black;
-    text-align: right;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+
+.card .category {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  color: #0077cc;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 164px;
+  width: 100%;
+}
+.footer-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional, if you want vertical centering too */
+  padding: 10px 0;
+}
+
+
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Registration*/
+.register, .loginForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: purple;
+  margin-top: -10px;
+  font-size: 2rem;
+}
+
+.registerInput, .loginInput {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+
+.login-link {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #555;
+}
+
+.login-link a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 30px 20px;
+    width: 90%;
+  }
+
+  .register-container h2 {
+    font-size: 22px;
+  }
+
+  .register-form input,
+  .register-form button {
     font-size: 14px;
-    color: white;
-    height: 164px;
-}
-.footer-contents{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px 0;
+    padding: 10px;
+  }
 }
 
 
-.section-header{
-    margin-left: 20px;
+/* Feedback */
+.feedbackContainer {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
 }
 
-.post{
-    color: black;
-    text-decoration: none;
-
-}
-.fa{
-    margin-left: 20px;
+.feedbackHeader {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-
-.posts{
-    color: black;
-    text-decoration: none;
-}   
-.app{
-    color: black;
+.feedbackHeader h1 {
+  font-size: 2.5rem;
+  color: green;
 }
 
-.singlePostImage{
-    
-    height: 1000px;   
-    /* display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; */
+.feedbackHeader p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.feedbackContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.feedbackForm,
+.feedbackInfo {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feedbackForm h2,
+.feedbackInfo h2 {
+  color: green;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: green;
+  outline: none;
+}
+
+.submitBtn {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #000;
+}
+
+.successMessage {
+  color: green;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.feedbackInfo p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.mapContainer {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card .post {
+  color: #000;
+  text-decoration: none;
 }
 
 .blog-container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 30px auto;
   background: #fff;
   padding: 20px;
@@ -135,26 +350,88 @@ footer{
   margin-bottom: 20px;
 }
 
-.contents{
-    display: flex;
-    width: min-content;
+.group {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.share {
+  display: flex;
+  align-items: center;
+}
+.share h3 {
+  margin-right: 20px;
+}
+.share a {
+  margin-right: 20px;
+  color: #444;
+}
+
+.share a i {
+  font-size: 20px;
+}
+
+.team .design,
+.web, .github {
+  background: #e0e7ff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Comments and Reply */
+
+
+
+
+
+
+
+.morePost h3 {
+  margin: 50px 0 20px 0;
+}
+
+.morePost .contents {
+  display: flex;
+}
+
+.morePostContents p {
+  margin-top: -10px;
+}
+
+.morePostContents a {
+  text-decoration: none;
+  color: #000;
+}
+
 .contentsImg {
-  width: 33%;
+  width: 333px;
   height: 166px;
   margin-right: 10px;
   display: flex;
   justify-content: space-between;
-  
 }
-.morePostcontents p {
-    color: red;
+
+.morePostContents {
+  margin-right: 20px;
+}
+
+.feedback {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+  font-size: 2rem;
 }
 
 .register, .login {
   text-align: center;
-  color: purple;
-  margin-top: -10px;
+  color: green;
+  margin-top: -50px;
   font-size: 2rem;
 }
 
@@ -163,25 +440,12 @@ footer{
   margin-top: 10px;
 }
 
-/* Registration*/
-.registerForm, .loginForm {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+@media (max-width: 768px) {
+  .feedbackContent {
+    flex-direction: column;
+  }
 }
 
-.registerInput, .loginInput {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
 
 .comment-section {
     margin: 3rem 0;
@@ -208,101 +472,125 @@ footer{
     margin-bottom: 1rem;
 }
 
-.comment-form textarea {
-    width: 100%;
-    min-height: 120px;
-    padding: 1rem;
-    border: 2px solid #e1e8ed;
-    border-radius: 8px;
-    resize: vertical;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+.comments-section {
+  margin-top: 40px;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.comment-form textarea:focus {
-    outline: none;
-    border-color: #3498db;
+.comments-section h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
 }
 
-.comment-form input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 2px solid #e1e8ed;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+/* Individual comment box */
+.comment-box {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
 }
 
-.comment-form input:focus {
-    outline: none;
-    border-color: #3498db;
+.comment-box:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
-.comment-form button {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 0.75rem 2rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition:0.3s ease;
+.comment-box strong {
+  color: #333;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
 }
 
-.comment-form button:hover {
-    background: #2980b9;
+.comment-box p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 6px;
+  line-height: 1.5;
 }
 
-/* Comments List */
-.comment-list {
-    list-style: none;
-    padding: 0;
+.comment-box small {
+  color: #888;
+  font-size: 13px;
 }
 
-.comment-item {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
+/* Comment form */
+.comments-section form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.comment-item:hover {
-    transform: translateY(-2px);
+.comments-section textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
-.comment-header {
-    display: flex;
-    justify-content: between;
-    align-items: center;
-    margin-bottom: 0.75rem;
-    flex-wrap: wrap;
-    gap: 1rem;
+.comments-section textarea:focus {
+  border-color: #0077cc;
 }
 
-.comment-author {
-    color: #2c3e50;
-    font-weight: 600;
+.comments-section button {
+  margin-top: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
 }
 
-.comment-date {
-    color: #7f8c8d;
-    font-size: 0.875rem;
+.comments-section button:hover {
+  background-color: #005fa3;
 }
 
-.comment-content {
-    color: #34495e;
-    line-height: 1.6;
-    white-space: pre-wrap;
+/* Logout and login links */
+.comments-section a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 8px;
 }
 
-.no-comments {
-    text-align: center;
-    color: #7f8c8d;
-    font-style: italic;
-    padding: 2rem;
+.comments-section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .comments-section {
+    padding: 18px;
+  }
+
+  .comment-box {
+    padding: 12px 14px;
+  }
+
+  .comments-section textarea {
+    min-height: 80px;
+  }
+
+  .comments-section h3 {
+    font-size: 20px;
+  }
 }
 
 /* Responsive Design */
@@ -380,4 +668,8 @@ footer{
     .comment-form input::placeholder {
         color: #a0aec0;
     }
+}
+
+.account{
+  font-size: 15px;
 }

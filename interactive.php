@@ -1,38 +1,31 @@
-<?php
-include('includes/header.php');
-include('includes/navbar.php');
-?>
-<h1 class="ia">Interactive Articles</h1>
-<div class="cards">
-  <div class="card" style="width: 5rem;">
-    <img src="./images/int1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Self-Assessment quiz</h5>
-      <p class="card-text">Fostering a sense of well-being and resilience.It's about helping children learn to recognise and express ther emotion in a healthy way.</p>
-      <a href="#" class="btn btn-primary">Click here</a>
-    </div>
-  </div>
-  <div class="bottomCardsleft">
-    <div class="card" style="width: 18rem; margin-bottom: 15px;">
-      <img src="./images/int2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Learning challenges quiz</h5>
-        <p class="card-text">How the brain receives , organises and responds to sensory information from the body and environment </p>
-        <a href="#" class="btn btn-primary">Click here</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="./images/int3.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Learning challenges quiz</h5>
-        <p class="card-text">How the brain receives , organises and responds to sensory information from the body and environment </p>
-        <a href="#" class="btn btn-primary">Click here</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-<?php
-include('includes/footer.php');
-?>
+<?php include "./includes/header.php" ?>
+    <?php include "./includes/navbar.php" ?>
+    <main>
+    <!-- Interactive Features -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Interactive Features</h2>
+          <a href="#">More <i>Arrow Icon</i></a>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <img src="./images/3.png" alt="Self Assessment Quiz"/>
+            <h3>Self - Assessment Quiz</h3>
+            <small>Author | Date</small>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="./images/4.png" alt="Learning Challenges Quiz"/>
+              <h3>Learning Challenges Quiz</h3>
+              <small>Author | Date</small>
+            </div>
+            <div class="card">
+              <img src="./images/5.png" alt="Developmental Milestones Quiz"/>
+              <h3>Developmental Milestone Quiz</h3>
+              <small>Author | Date</small>
+            </div>
+          </div>          
+        </div>        
+      </section>  
+    </main>
+<?php include "./includes/footer.php" ?>
