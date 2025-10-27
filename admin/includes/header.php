@@ -15,4 +15,8 @@
       <div class="menus p-4 mt-5">
         <a href="create.php" class="text-light text-decoration-none"><strong>Add New Post</strong></a>
       </div>
+
+       <div class="menus p-4 mt-5">
+        <a href="messages.php" class="text-light text-decoration-none"><strong>View feedback</strong></a>
+      </div>
     </div>

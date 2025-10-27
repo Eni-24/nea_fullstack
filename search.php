@@ -1,7 +1,7 @@
 <?php include "./includes/header.php"; ?>
 <?php include "./includes/navbar.php"; ?>
 <main>
-  <!-- Featured Articles -->
+
   <section class="section">
     <div class="section-header">
       <h2 class="ml-4">Search Results</h2>

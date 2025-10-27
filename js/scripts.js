@@ -18,7 +18,7 @@ function confirmDelete(commentId, postId) {
 
 (function () {
   emailjs.init({
-    publicKey: "D7s2QtY9npU46KDNG", // your public key
+    publicKey: "OMTu7XFBNdqF-_tvE", // your public key
   });
 })();
 
@@ -27,7 +27,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_2bwa8bq", "template_nx6tqat", this).then(
+    emailjs.sendForm("service_f2et3gs", "__ejs-test-mail-service__", this).then(
       () => {
         document.getElementById("success-message").style.display = "block";
         this.reset();
